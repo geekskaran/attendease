@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1009508827320",
+    "project_id": "FitnessChallenge-6138d",
+    "storage_bucket": "FitnessChallenge-6138d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009508827320:android:3cbf19d6d83813d230344d",
+        "android_client_info": {
+          "package_name": "com.FitnessChallenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzj94fxEQn7on4-E65ZAHP5-hhDTJ7Hzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
