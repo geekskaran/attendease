@@ -1,6 +1,27 @@
+// rootProject.name = 'FitnessChallenge'
+// apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+// include ':app'
+// includeBuild('../node_modules/@react-native/gradle-plugin')
+//  include ':react-native-vector-icons'
+//  project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+
 rootProject.name = 'FitnessChallenge'
+
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
 include ':app'
+include ':react-native-ble-manager'
+project(':react-native-ble-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ble-manager/android')
 includeBuild('../node_modules/@react-native/gradle-plugin')
- include ':react-native-vector-icons'
- project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+// Vector Icons
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+// BLE Manager
+include ':react-native-ble-manager'
+project(':react-native-ble-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ble-manager/android')
+
+include ':react-native-sqlite-storage'
+project(':react-native-sqlite-storage').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sqlite-storage/platforms/android')

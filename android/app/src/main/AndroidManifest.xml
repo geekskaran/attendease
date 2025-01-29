@@ -11,6 +11,34 @@
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
 
+
+
+<!-- user ble permission  -->
+
+<!-- <uses-permission android:name="android.permission.BLUETOOTH"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> -->
+    <!-- BLE permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <!-- These are required for Android 12+ -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" 
+        android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    
+    <!-- Declare that your app is available to BLE-capable devices -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+
+
+
+
+    
+
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
